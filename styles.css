@@ -2,6 +2,10 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
 }
 
 body {
@@ -16,11 +20,13 @@ body {
 header {
   display: flex;
   align-items: center;
+  margin-bottom: 10px;
 }
 
 .container {
   display: flex;
   flex-direction: row;
+  padding-right: 50px;
   border: 1px solid;
   justify-content: center;
   border-radius: 30px;
@@ -47,8 +53,46 @@ header {
 .container .faq--holder {
   width: 500px;
   padding: 40px;
+}
+.container .faq--holder h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: hsl(238deg, 29%, 16%);
+}
+.container .faq--holder .faq--question {
+  border-bottom: 1px solid hsl(240deg, 5%, 91%);
+  padding: 20px 0;
+}
+.container .faq--holder .faq--question .answer {
+  display: none;
+  color: hsl(240deg, 6%, 50%);
+  padding: 10px;
   padding-left: 0;
 }
-.container .faq--holder .faq--questions {
-  border: 1px solid;
+.container .faq--holder .faq--question span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.question {
+  font-size: 1.2rem;
+  color: hsl(240deg, 6%, 50%);
+}
+
+footer a {
+  color: hsl(238deg, 29%, 16%);
+  margin-left: 5px;
+}
+
+.tab {
+  margin-right: 20px;
+}
+
+.faq-ques:hover {
+  cursor: pointer;
+}
+.faq-ques:hover h3 {
+  color: hsl(14deg, 88%, 65%);
 }/*# sourceMappingURL=styles.css.map */
