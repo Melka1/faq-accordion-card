@@ -3,7 +3,7 @@
     padding: 0;
     margin: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 400;
     color: white;
 }
@@ -23,31 +23,35 @@ header {
 .container {
     display: flex;
     flex-direction: row;
-    padding-right: 50px;
+    padding-right: 20px;
     border: 1px solid;
     justify-content: center;
     border-radius: 30px;
     background-color: white;
+    gap: 50px;
     .image img {
         position: relative;
     }
     background-image: url("./images/bg-pattern-desktop.svg");
-    background-position-x: -550px;
-    background-position-y: -255px;
+    background-position-x: -570px;
+    background-position-y: -345px;
     background-repeat: no-repeat;
     .illustration {
-        top: 58px;
+        top: -20px;
         left: -60px;
-    }
-    .box {
-        top: -185px;
-        left: -85px;
-    }
-    .image {
         width: 450px;
     }
+    .box {
+        top: -250px;
+        left: -90px;
+    }
+    .image {
+        margin: auto;
+        width: 350px;
+        height: 350px;
+    }
     .faq--holder {
-        width: 500px;
+        width: 425px;
         padding: 40px;
         h2 {
             font-size:2.5rem;
@@ -63,6 +67,7 @@ header {
                 color: hsl(240, 6%, 50%);
                 padding: 10px;
                 padding-left: 0;
+                line-height: 1.5rem;
             }
             span {
                 display: flex;
@@ -70,7 +75,6 @@ header {
                 justify-content: space-between;
             }
         }
-
     }
 }
 
@@ -82,6 +86,9 @@ header {
 footer a {
     color:hsl(238, 29%, 16%);
     margin-left: 5px;
+    &:hover {
+        color:hsl(14, 88%, 65%);
+    }
 }
 .tab {
     margin-right: 20px;
