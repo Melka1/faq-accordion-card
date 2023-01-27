@@ -20,16 +20,23 @@ header {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
+    margin-right: 183px;
+    .box {
+        left: 98px;
+        top: 21px;
+        position: relative;
+        z-index: 1;
+    }
 }
 .container {
     display: flex;
     flex-direction: row;
     padding-right: 20px;
-    border: 1px solid;
     justify-content: center;
     border-radius: 30px;
     background-color: white;
     gap: 50px;
+    overflow: hidden;
     .image img {
         position: relative;
     }
@@ -43,6 +50,7 @@ header {
         width: 450px;
     }
     .box {
+        display: none;
         top: -250px;
         left: -90px;
     }
@@ -106,6 +114,13 @@ footer a {
     body {
         padding-top: 150px;
         padding-bottom: 35px;
+        min-width: initial;
+    }
+    header {
+        margin-right: 0;
+        .box {
+            display: none;
+        }
     }
     .container {
         flex-direction: column;
@@ -115,6 +130,7 @@ footer a {
         background-size: 230px;
         background-position-x: center;
         background-position-y: -120px;
+        overflow: initial;
         .faq--holder {
             width: auto;
             padding: 20px;
@@ -124,10 +140,14 @@ footer a {
         }
         .image {
             transform: scale(0.5);
-            top: -110px;
+            top: -200px;
             left: -10px;
             height: 70px;
             position: relative;
+            .box {
+                display: block;
+                top:280px;
+            }
         }
     }
 }
