@@ -6,4 +6,48 @@
 body {
     height: 100vh;
     background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    //width: 700px;
+    border: 1px solid;
+    justify-content: center;
+    border-radius: 30px;
+    // padding: 20px;
+    background-color: white;
+    .image img {
+        position: relative;
+    }
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-position-x: -550px;
+    background-position-y: -255px;
+    background-repeat: no-repeat;
+    .illustration {
+        top: 58px;
+        left: -60px;
+    }
+    .box {
+        top: -185px;
+        left: -85px;
+    }
+    .image {
+        width: 450px;
+    }
+    .faq--holder {
+        width: 500px;
+        padding: 40px;
+        padding-left: 0;
+        .faq--questions {
+            border: 1px solid;
+        }
+    }
 }

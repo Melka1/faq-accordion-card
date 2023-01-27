@@ -7,4 +7,48 @@
 body {
   height: 100vh;
   background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  border: 1px solid;
+  justify-content: center;
+  border-radius: 30px;
+  background-color: white;
+  background-image: url("./images/bg-pattern-desktop.svg");
+  background-position-x: -550px;
+  background-position-y: -255px;
+  background-repeat: no-repeat;
+}
+.container .image img {
+  position: relative;
+}
+.container .illustration {
+  top: 58px;
+  left: -60px;
+}
+.container .box {
+  top: -185px;
+  left: -85px;
+}
+.container .image {
+  width: 450px;
+}
+.container .faq--holder {
+  width: 500px;
+  padding: 40px;
+  padding-left: 0;
+}
+.container .faq--holder .faq--questions {
+  border: 1px solid;
 }/*# sourceMappingURL=styles.css.map */
