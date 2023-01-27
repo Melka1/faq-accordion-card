@@ -9,7 +9,8 @@
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
+  min-width: 1000px;
   background: linear-gradient(hsl(273deg, 75%, 66%), hsl(240deg, 73%, 65%));
   display: flex;
   flex-direction: column;
@@ -103,4 +104,34 @@ footer a:hover {
 }
 .faq-ques:hover h3 {
   color: hsl(14deg, 88%, 65%);
+}
+
+@media screen and (width <= 375px) {
+  body {
+    padding-top: 150px;
+    padding-bottom: 35px;
+  }
+  .container {
+    flex-direction: column;
+    padding-right: 0;
+    width: 326px;
+    gap: 35px;
+    background-size: 230px;
+    background-position-x: center;
+    background-position-y: -120px;
+  }
+  .container .faq--holder {
+    width: auto;
+    padding: 20px;
+  }
+  .container .faq--holder h2 {
+    text-align: center;
+  }
+  .container .image {
+    transform: scale(0.5);
+    top: -110px;
+    left: -10px;
+    height: 70px;
+    position: relative;
+  }
 }/*# sourceMappingURL=styles.css.map */
